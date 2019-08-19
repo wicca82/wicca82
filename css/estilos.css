@@ -1,0 +1,524 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+
+/* selector de etiqueta: header - section-article-nav */
+/* selector descendente : body header div nav ol li */
+/* selector de clase: se identifica con un punto .link */
+/* selector de id: se usa # : #portafolio */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ce8ak3');
+  src:  url('../fonts/icomoon.eot?ce8ak3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ce8ak3') format('truetype'),
+    url('../fonts/icomoon.woff?ce8ak3') format('woff'),
+    url('../fonts/icomoon.svg?ce8ak3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+
+
+
+
+
+
+
+body{
+  font-family: 'Indie Flower', cursive;
+  background-color: #faf7fa;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Karma', serif;
+  font-weight: normal;
+}
+
+h1{
+  font-size: 30px;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  text-transform: inherit;
+  text-decoration: dashed;
+  margin:0px;
+  background: blue;
+  z-index: 2;
+
+}
+h1.header-nombre{
+  display:flex;
+  background: none;
+}
+.hero{
+  height: 300px;
+  /*background-image: url("../imagenes/principal.jpg");*/
+  /*background-size: 600px 300px;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position-x: right;*/
+  color:white ;
+  border: 10px solid #e8d8e8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+
+
+}
+.hero-imagen{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+h1 strong{
+  color:#b526a4;
+}
+h2{
+  color:#b526a4;
+  text-transform: uppercase;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.proyecto{
+  border: 10px double;
+  border-color:#a6a1a6;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #f9ebfa;
+  align-items: center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+
+
+}
+.proyecto-descripcion{
+  font-size: 20px;
+  color: blueviolet;
+}
+
+
+.proyecto-titulo{
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-style: oblique;
+  color: blueviolet;
+  font-weight: bold;
+
+}
+
+.proyecto-detalles{
+  width: 50%;
+}
+
+.proyecto-imagencontainer{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.proyecto-imagencontainer img{
+  max-width: 100%;
+
+}
+.header{
+
+  background-color: #b042f5;
+  color: white;
+  border:5px solid #e8d8e8;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display:flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+
+
+
+  }
+  .menu ol{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+.header ol {
+  display: flex;
+  text-align: center;
+}
+
+  ol,
+  li{
+      margin:0;
+      padding: 0 10px;
+      list-style: none;
+  }
+
+.header h1{
+height: inherit;
+margin-right: auto;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+
+
+
+}
+
+
+  figure{
+    margin:0;
+  }
+
+}
+
+.header a {
+  color:white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer{
+  background-color: #b042f5;
+  margin:1px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+.footer img{
+  vertical-align: middle;
+}
+
+.evento-url{
+  color: blueviolet;
+  border:1px solid ;
+  padding: 5px 20px;
+  margin-bottom: 70px;
+  border-radius: 5px;
+}
+
+.portafolio{
+  background:
+  padding: 10px;
+}
+.evento-imagencontainer{
+  display: flex;
+  align-items: center;
+}
+.evento-imagenaprendizaje{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:5px solid;
+  border-radius:10px;
+  border-color: #a6a1a6;
+  padding: 10px;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+.event-lista{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.evento{
+  border: 1px solid purple;
+  margin:1%;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: auto;
+  background-color: #b042f5;
+  justify-content: center;
+
+
+
+}
+.evento-imagen{
+width: 480px;
+height: 200px;
+object-fit: cover;
+
+}
+.evento-detalle{
+ border:5px solid;
+ border-radius: 5px;
+ margin:20px 40px;
+ margin-top: -20px;
+ background-color: white;
+ font-family: 'Indie Flower';
+ color: #ab0384;
+ position: relative;
+ padding: 20px;
+ text-align: left;
+
+
+}
+
+
+.evento-titulo{
+  font-family: 'Indie Flower', cursive;
+  color: #ab0384;
+  text-decoration: underline;
+  font-weight: bold;
+
+}
+
+.contacto{
+  background-color: purple;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+.social{
+
+}
+.social-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+}
+.social-link.twitter{
+  background-image:url("../imagenes/twitter.png");
+  background-size: 50px 50px;
+
+}
+.social-link.github{
+  background-image:url("../imagenes/github.png");
+  background-size: 50px 50px;
+}
+
+.formulario-email input{
+  border-color: white;
+  border-radius: 5px;
+  padding: 5px 20px 5px 25px;
+
+}
+
+.container{
+  max-width: 1000px;
+  flex:1;
+  margin:0 auto;
+  /*width: 1000px;*/
+  display: inherit;
+  justify-content: inherit;
+  height: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+
+}
+.burguer-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+  right:20px;
+  color: white;
+
+
+}
+
+@media screen and (max-width:1024px){
+  .container{
+    padding: 0 1em;
+  }
+  .contacto{
+    padding: 0 1em;
+  }
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+
+
+  }
+  .hero-imagen{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
+
+    h1{
+      font-size: 2em;
+      z-index: 2;
+      background: blue;
+    }
+
+
+}
+
+@media screen and (max-width:767px){
+
+  .burguer-button{
+    display: block;
+  }
+
+
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header ol{
+    display: block;
+
+
+  }
+  .header ol li{
+    height: 50px;
+
+  }
+  .header a{
+    justify-content: center;
+
+  }
+  .header .logo{
+    text-align: left;
+  }
+  .header .header-nombre{
+    display: block;
+    text-align: center;
+  }
+  .proyecto{
+    display: block;
+    margin: 1em;
+    text-align: center;
+  }
+  .proyecto-imagencontainer{
+    width: auto;
+    text-align: center;
+    display: block;
+  }
+  .proyecto-detalles{
+     width: auto;
+    font-size: 16px;
+
+  }
+  .proyecto-titulo{
+    font-size: 1.5em;
+
+  }
+  .proyecto-url{
+    font-size: 1em;
+
+  }
+  .proyecto-descripcion{
+    font-size: 1em;
+  }
+  .evento{
+    width: 70%;
+    flex-shrink: initial;
+  }
+  .evento-imagen{
+    width: 100%;
+  }
+  .evento-imagencontainer{
+    width: 100%;
+  }
+  .evento-detalle{
+
+    margin:-2em .5em .5em;
+    padding: 1em;
+  }
+  .evento-imagenaprendizaje{
+    align-items: center;
+  }
+
+
+}
+
+
+@media screen and (max-width:480px){
+  h1{
+    font-size: 1em;
+    height: auto;
+  }
+  .hero-imagen{
+    height: 200px;
+    width: 100%;
+  }
+  .contacto{
+    height: auto;
+    padding: 1em;
+    text-align: center;
+    display: block;
+
+  }
+  .footer{
+    display: block;
+    text-align: center;
+
+  }
+  .social-link{
+    border: 1px;
+  }
+
+}
+
+
+@media screen and (max-width:320px){
+
+}
