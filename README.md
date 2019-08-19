@@ -1,2 +1,2 @@
 # wicca82
-Pagina para mi dominia
+Pagina para mi dominio
