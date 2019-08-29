@@ -433,6 +433,10 @@ object-fit: cover;
   }
   .header a{
     justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
 
   }
   .header .logo{
@@ -442,6 +446,25 @@ object-fit: cover;
     display: block;
     text-align: center;
   }
+  .menu{
+    position: fixed;
+    background: rgba(176, 66, 245, 0.8);
+    z-index:3;
+    top:50px;
+    right:-100vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+
+
+  }
+  .menu.is-active{
+    right:0px;
+  }
+
   .proyecto{
     display: block;
     margin: 1em;

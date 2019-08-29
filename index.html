@@ -12,7 +12,7 @@
 
   </head>
   <body>
-    <i class="icon-menu burguer-button"></i>
+    <i class="icon-menu burguer-button" id="burguer-menu"></i>
     <header class="header">
       <figure class="logo">
         <img src="imagenes/logo.png" width="50" height="50">
@@ -145,6 +145,43 @@
        <p>Diseñado con <strong>❤️</strong> por mí...</p>
       </div>
     </footer>
+    <script>
+      const ipad = window.matchMedia("screen and (max-width:767px)");
 
+      const burguerButton = document.querySelector("#burguer-menu");
+      const menu = document.querySelector(".menu");
+
+
+
+      burguerButton.addEventListener("click", hideShow)
+
+      ipad.addListener(validation)
+
+      function validation(evento){
+        if (evento.matches){
+          burguerButton.addEventListener("click", hideShow)
+        }else{
+          burguerButton.removeEventListener("click", hideShow)
+
+        }
+
+      }
+
+      function hideShow(){
+        if(menu.classList.contains("is-active")){
+          menu.classList.remove("is-active");
+
+        }else{
+          menu.classList.add("is-active");
+
+        }
+
+      }
+
+
+
+
+
+    </script>
   </body>
 </html>
